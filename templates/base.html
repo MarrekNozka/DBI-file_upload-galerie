@@ -22,7 +22,7 @@
   <p><img src="{{ url_for('static', filename='flask-icon.png') }}" /></p>
   <ul>
     <li><a href="{{ url_for('index') }}">Index</a></li>
-    <li><a href="{{ url_for('info') }}">Info</a></li>
+    <li><a href="{{ url_for('galerie') }}">Galerie</a></li>
     <li><a href="{{ url_for('abc') }}">ABC</a></li>
   </ul></nav>
 
@@ -35,6 +35,13 @@
 <p>
 Startovací šablona pro webový framework Flask.
 </p>
+
+<h2>Upload</h2>
+
+<form method="post" enctype="multipart/form-data">
+  <input type="file" name="file"> <br>
+  <input type="submit" value="Upload">
+</form>
 
 <h2>Jenda flaška</h2>
 <img src="{{ url_for('static', filename='flask.png') }}" alt="">
